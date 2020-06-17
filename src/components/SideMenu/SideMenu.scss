@@ -1,0 +1,29 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.sidemenu {
+  width: 100%;
+  height: 100vh;
+  background-color: $primaryColor;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  @include element(item) {
+    padding: 22px;
+
+    &:last-child {
+      position: absolute;
+      bottom: 0;
+    }
+
+    &:hover,
+    &.active {
+      background-color: $hoverColor;
+    }
+
+    img {
+      max-width: 38px;
+    }
+  }
+}

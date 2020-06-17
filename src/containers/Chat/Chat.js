@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import SideMenu from '../../components/SideMenu/SideMenu';
 
 class Chat extends Component {
   constructor(props) {
@@ -7,7 +8,7 @@ class Chat extends Component {
   }
   render() { 
     return ( 
-      <div>chat</div>
+      <SideMenu />
     );
   }
 }
