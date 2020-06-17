@@ -1,0 +1,21 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.conversations {
+  @include element(header) {
+    background-color: $grayA;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 30px;
+
+    img {
+      max-width: 30px;
+    }
+  }
+
+  @include element(list-item) {
+    padding: 33px 15px;
+    border-bottom: 2px solid rgba($color: $primaryDarkColor, $alpha: 0.1);
+  }
+}

@@ -1,0 +1,33 @@
+import React from 'react';
+import avatarDefault from "../../assets/images/careteam_copy.png";
+import "./Info.scss";
+
+const Info = ({title, subTitle, text, date, image, tag}) => {
+  return ( 
+    <div className='info'>
+      <div className="info__main-content">
+        <div className={`info__avatar mr-12 ${tag ? "info__avatar--tag" : ""}`} style={{backgroundImage: `url(${image ? image : avatarDefault})`}}></div>
+        <div>
+          <h4>{title}</h4>
+          <h5 className='italic-font'>{subTitle}</h5>
+          <p className='mb-0'>{text}</p>
+        </div>
+      </div>
+      <div>
+        <small>{date}</small>
+        {tag && <div className="info__tag">{tag}</div>}
+      </div>
+    </div>
+  );
+}
+
+Info.defaultProps = {
+  title: 'Mom’s Discharge Plan',
+  subTitle: 'Karen Becker',
+  text: 'Sed mollis mi iaculis tincidu...',
+  date: 'Oct 12',
+  image: avatarDefault,
+  tag: ''
+};
+ 
+export default Info;
