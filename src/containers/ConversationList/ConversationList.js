@@ -31,7 +31,7 @@ class ConversationList extends Component {
       <div className="conversations">
         <div className="conversations__header">
           <h4 className="text-white mb-0">Conversations</h4>
-          <img src={chatIcon} />
+          <img src={chatIcon} alt="chat icon" />
         </div>
         {this.renderConversationList(conversationList)}
       </div>
