@@ -1,0 +1,26 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.btn {
+  padding: 11px 25px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  font-size: $extraLargFontSize;
+
+  &:focus {
+    border: 1px solid transparent;
+    outline: 0;
+  }
+
+  &.primary {
+    background-color: $white;
+    color: $blush;
+  }
+
+  .icon {
+    margin-right: 23px;
+  }
+}
