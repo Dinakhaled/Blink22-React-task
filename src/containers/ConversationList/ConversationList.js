@@ -12,18 +12,20 @@ class ConversationList extends Component {
     }
   }
 
+  // Render conversation groups from conversationList array
   renderConversationList = (conversationList) => {
     const { activeConversationId } = this.state;
     return conversationList.map(item => (
-      <div className={`conversations__list-item ${item.id === activeConversationId ? "active" : ""}`}>
+      <div key={item.id} className={`conversations__list-item ${item.id === activeConversationId ? "active" : ""}`}>
         <Info
-          key={item.id}
           title={item.title}
           subTitle={item.subTitle}
           text={item.text}
           image={item.image}
           date={item.date}
           tag={item.hasNotifications}
+          ImgSize="lg"
+          alignment="flex-center"
         />
       </div>
     ))
