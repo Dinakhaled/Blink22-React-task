@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "5368c4d487ab99a1dab06d3a86a25f00",
+    "revision": "16c0e4b6a4b245f8de19caa956bc6ab4",
     "url": "/Blink22-React-task/index.html"
   },
   {
-    "revision": "97e7f04a0e1e0cf40090",
-    "url": "/Blink22-React-task/static/css/main.28989540.chunk.css"
+    "revision": "f9fd3b257a24c477dfa9",
+    "url": "/Blink22-React-task/static/css/main.639c4407.chunk.css"
   },
   {
     "revision": "b15f62a42745495a4075",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Blink22-React-task/static/js/2.8c40cf50.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "97e7f04a0e1e0cf40090",
-    "url": "/Blink22-React-task/static/js/main.1c1755fd.chunk.js"
+    "revision": "f9fd3b257a24c477dfa9",
+    "url": "/Blink22-React-task/static/js/main.9326cffc.chunk.js"
   },
   {
     "revision": "c246f0fd6cf3435fa9bc",
