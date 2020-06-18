@@ -2,12 +2,19 @@
 @import "../../scss/mixins";
 
 .conversations {
+
+  @include element(list) {
+    overflow-y: scroll;
+    max-height: calc(100vh - 74px);
+  }
+
   @include element(header) {
     background-color: $grayA;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px 30px;
+    height: 74px;
+    padding: 0 30px;
 
     img {
       max-width: 30px;
@@ -15,7 +22,13 @@
   }
 
   @include element(list-item) {
-    padding: 33px 15px;
+    padding: 33px 20px;
     border-bottom: 2px solid rgba($color: $primaryDarkColor, $alpha: 0.1);
+    cursor: pointer;
+
+    &:hover,
+    &.active {
+      background-color: $boxHover;
+    }
   }
 }

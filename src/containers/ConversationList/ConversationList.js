@@ -7,12 +7,15 @@ import "./ConversationList.scss";
 class ConversationList extends Component {
   constructor(props) {
     super(props);
-    this.state = {  }
+    this.state = { 
+      activeConversationId: 1
+    }
   }
 
   renderConversationList = (conversationList) => {
+    const { activeConversationId } = this.state;
     return conversationList.map(item => (
-      <div className="conversations__list-item">
+      <div className={`conversations__list-item ${item.id === activeConversationId ? "active" : ""}`}>
         <Info
           key={item.id}
           title={item.title}
@@ -33,7 +36,9 @@ class ConversationList extends Component {
           <h4 className="text-white mb-0">Conversations</h4>
           <img src={chatIcon} alt="chat icon" />
         </div>
-        {this.renderConversationList(conversationList)}
+        <div className="conversations__list">
+          {this.renderConversationList(conversationList)}
+        </div>
       </div>
     );
   }

@@ -1,5 +1,7 @@
 * {
   box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: $primaryLightColor $grayMeduim;
 }
 
 body {
@@ -13,4 +15,19 @@ body {
 
 .text-white {
   color: $white;
+}
+
+/* ============= 
+Custom style for the scrolls
+Works on Chrome/Edge/Safari
+ ============= */
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-track {
+  background: $grayMeduim;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: $primaryLightColor;
+  border-radius: 20px;
 }
