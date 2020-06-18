@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Blink22-React-task/static/css/main.28989540.chunk.css",
+    "main.js": "/Blink22-React-task/static/js/main.1c1755fd.chunk.js",
+    "main.js.map": "/Blink22-React-task/static/js/main.1c1755fd.chunk.js.map",
+    "runtime-main.js": "/Blink22-React-task/static/js/runtime-main.7465555c.js",
+    "runtime-main.js.map": "/Blink22-React-task/static/js/runtime-main.7465555c.js.map",
+    "static/js/2.8c40cf50.chunk.js": "/Blink22-React-task/static/js/2.8c40cf50.chunk.js",
+    "static/js/2.8c40cf50.chunk.js.map": "/Blink22-React-task/static/js/2.8c40cf50.chunk.js.map",
+    "index.html": "/Blink22-React-task/index.html",
+    "precache-manifest.2a4f272e6834997134f59873e312ee9a.js": "/Blink22-React-task/precache-manifest.2a4f272e6834997134f59873e312ee9a.js",
+    "service-worker.js": "/Blink22-React-task/service-worker.js",
+    "static/css/main.28989540.chunk.css.map": "/Blink22-React-task/static/css/main.28989540.chunk.css.map",
+    "static/js/2.8c40cf50.chunk.js.LICENSE.txt": "/Blink22-React-task/static/js/2.8c40cf50.chunk.js.LICENSE.txt",
+    "static/media/base.scss": "/Blink22-React-task/static/media/Gotham-Book.dbd2f852.ttf"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7465555c.js",
+    "static/js/2.8c40cf50.chunk.js",
+    "static/css/main.28989540.chunk.css",
+    "static/js/main.1c1755fd.chunk.js"
+  ]
+}
