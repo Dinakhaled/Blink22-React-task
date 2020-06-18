@@ -1,0 +1,18 @@
+@import "../../scss/variables";
+
+.conversation-detailes {
+  display: flex;
+
+  .sub-title {
+    font-style: italic;
+  }
+
+  img {
+    max-width: 15px;
+  }
+}
+
+.conversation-container {
+  max-height: calc(100vh - 74px);
+  overflow-y: scroll;
+}

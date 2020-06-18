@@ -1,0 +1,6 @@
+[
+  {"id": 1, "text": "assist with daily grooming activities such as bathing, teeth, hair", "date": "12:20p", "action": true, "from": "me", "hasInfo": true, "title": "Daily grooming assistance", "who": "me", "hasFooter": true, "textIcon": true},
+  {"id": 2, "text": "assist with daily grooming activities such as bathing, teeth, hair", "date": "12:20p", "action": true, "from": "them", "hasInfo": true, "title": "Daily grooming assistance", "who": "Ahmed", "hasFooter": true, "textIcon": true},
+  {"id": 3, "text": "assist with daily grooming activities such as bathing, teeth, hair", "date": "12:20p", "action": true, "from": "them", "hasInfo": true, "title": "Daily grooming assistance", "who": "Ahmed", "hasFooter": true, "textIcon": true},
+  {"id": 4, "text": "assist with daily grooming activities such as bathing, teeth, hair", "date": "12:20p", "action": true, "from": "them", "hasInfo": true, "title": "Daily grooming assistance", "who": "Ahmed", "hasFooter": true, "textIcon": true}
+]

@@ -68,10 +68,44 @@
         border-bottom-right-radius: 10px;
         transform:translate(-30px, -2px);
       }
+
+    }
+
+    .who {
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+      color: $gray50;
+      font-weight: 600;
+    }
+
+    .date {
+      position: absolute;
+      right: 0;
+      bottom: -20px;
+      color: $grayA;
     }
 
     * {
       color: $primaryDarkColor;
+    }
+  }
+
+  img {
+    max-width: 12px;
+  }
+
+  @include element(footer) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    @include element(info) {
+      display: flex;
+      align-items: center;
+      div {
+        text-align: right;
+      }
     }
   }
 
