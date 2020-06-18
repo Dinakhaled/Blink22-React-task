@@ -28,6 +28,14 @@ body {
   align-items: center;   
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
+.bold {
+  font-weight: 600;
+}
+
 /* ============= 
 Custom style for the scrolls
 Works on Chrome/Edge/Safari

@@ -5,9 +5,11 @@ import filterIcon from "../../assets/images/ico_filter.png";
 import searchIcon from "../../assets/images/ico_search.png";
 import ChatBubble from '../../components/ChatBubble/ChatBubble';
 import ConversationData from "../../FakeData/Conversation.json";
-import Info from "../../components/Info/Info";
 import sketchIcon from "../../assets/images/notes_26.png";
 import dateIcon from "../../assets/images/time_copy.png";
+import sendIcon from "../../assets/images/send.png";
+import addIcon from "../../assets/images/add-icon.png";
+import Input from '../../components/Input/Input';
 import "./Conversation.scss";
 
 class Conversation extends Component {
@@ -23,7 +25,7 @@ class Conversation extends Component {
   }
 
   renderConversation = (ConversationData) => {
-    return ConversationData.map(({from, who, date, action, text, children, title, textIcon, hasFooter, hasInfo, id}) => (
+    return ConversationData.map(({from, who, date, action, text, hasLinks, title, textIcon, hasFooter, hasInfo, id, label}) => (
       <ChatBubble 
         from={from}
         who={who}
@@ -32,10 +34,13 @@ class Conversation extends Component {
         text={text}
         title={title}
         key={id}
+        label={label}
+        labelIcon={"😥"}
+        hasLinks={hasLinks}
         textIcon={textIcon && <img src={sketchIcon} alt="sketch icon" className='mr-12' />}
         hasFooter={hasFooter}
       >
-      {hasInfo && <div className='conversation-detailes mb-15'>
+      {hasInfo && <div className='conversation__detailes mb-15'>
         <div>
           <img src={dateIcon} alt='icon' className='mr-12' />
         </div>
@@ -53,8 +58,15 @@ class Conversation extends Component {
     return ( 
       <div>
         <ActionsBar actions={headerActions} title='Mom’s Discharge Plan' />
-        <div className='p-30 conversation-container'>
+        <div className='p-30 conversation__container'>
           {this.renderConversation(ConversationData)}
+        </div>
+        <div className="conversation__footer">
+          <div className="conversation__footer__add mr-10">
+            <img src={addIcon} alt='add icon'/>
+          </div>
+          <Input />
+          <img src={sendIcon} alt='send icon' className="ml-10 mr-10" />
         </div>
       </div>
     );
