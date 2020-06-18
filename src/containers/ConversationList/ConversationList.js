@@ -15,9 +15,8 @@ class ConversationList extends Component {
   renderConversationList = (conversationList) => {
     const { activeConversationId } = this.state;
     return conversationList.map(item => (
-      <div className={`conversations__list-item ${item.id === activeConversationId ? "active" : ""}`}>
+      <div key={item.id} className={`conversations__list-item ${item.id === activeConversationId ? "active" : ""}`}>
         <Info
-          key={item.id}
           title={item.title}
           subTitle={item.subTitle}
           text={item.text}

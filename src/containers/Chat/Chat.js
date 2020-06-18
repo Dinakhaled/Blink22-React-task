@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Conversation from '../Conversation/Conversation';
 import ConversationList from '../ConversationList/ConversationList';
 import "./Chat.scss";
 
@@ -11,7 +12,7 @@ class Chat extends Component {
     return ( 
       <div className="chat">
         <ConversationList />
-        <div></div>
+        <Conversation />
       </div>
     );
   }
