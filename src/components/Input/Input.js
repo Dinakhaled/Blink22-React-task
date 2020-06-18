@@ -14,7 +14,7 @@ const Input = ({type, placeholder}) => {
 
 Input.defaultProps = {
   type: 'text',
-  placeholder: 'Enter a text'
+  placeholder: 'message'
 };
  
 export default Input;
