@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import SideMenu from '../../components/SideMenu/SideMenu';
+import ConversationList from '../ConversationList/ConversationList';
+import "./Chat.scss";
 
 class Chat extends Component {
   constructor(props) {
@@ -8,7 +9,10 @@ class Chat extends Component {
   }
   render() { 
     return ( 
-      <SideMenu />
+      <div className="chat">
+        <ConversationList />
+        <div></div>
+      </div>
     );
   }
 }
