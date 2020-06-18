@@ -1,0 +1,78 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.chat-bubble {
+
+  @include element(avatar) {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: auto;
+
+    &.from-them {
+      margin-left: unset;
+    }
+  }
+
+  @include element(content) {
+    background-color: $secondaryColor;
+    padding: 15px 25px;
+    border-radius: 10px;
+    max-width: 80%;
+    position: relative;
+    color: $primaryDarkColor;
+    font-size: $meduimFontSize;
+    margin-left: 17%;
+
+    &:before, &:after {
+      content:"";
+      position:absolute;
+      bottom:-2px;
+      height:20px;
+    }
+
+    &.from-me {
+      &:before {
+        right:-7px;
+        border-right:20px solid $secondaryColor;
+        border-bottom-left-radius: 16px 14px;
+        transform:translate(0, -2px);
+      }
+
+      &:after {
+        right: -56px;
+        width: 26px;
+        background: $white;
+        border-bottom-left-radius: 10px;
+        transform: translate(-30px, -2px);
+      }
+    }
+
+    &.from-them {
+      margin-left: 3%;
+
+    &:before {
+        left:-7px;
+        border-left:20px solid $secondaryColor;
+        border-bottom-right-radius: 16px 14px;
+        transform:translate(0, -2px);
+      }
+
+      &:after {
+        left:4px;
+        width:26px;
+        background:$white;
+        border-bottom-right-radius: 10px;
+        transform:translate(-30px, -2px);
+      }
+    }
+
+    * {
+      color: $primaryDarkColor;
+    }
+  }
+
+}

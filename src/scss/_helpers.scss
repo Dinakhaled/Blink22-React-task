@@ -8,8 +8,16 @@ $sides: (top, bottom, left, right);
       margin-#{$side}: #{$space}px;
     }
 
+    .m-#{$space} {
+      padding: #{$space}px;
+    }
+
     .p#{str-slice($side, 0, 1)}-#{$space} {
       padding-#{$side}: #{$space}px;
+    }
+
+    .p-#{$space} {
+      padding: #{$space}px;
     }
   }
 }

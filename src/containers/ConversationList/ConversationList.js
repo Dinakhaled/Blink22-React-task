@@ -23,6 +23,8 @@ class ConversationList extends Component {
           image={item.image}
           date={item.date}
           tag={item.hasNotifications}
+          ImgSize="lg"
+          alignment="flex-center"
         />
       </div>
     ))

@@ -17,6 +17,13 @@ body {
   color: $white;
 }
 
+.flex-start {
+  align-items: flex-start;
+}
+.flex-center {
+  align-items: center;   
+}
+
 /* ============= 
 Custom style for the scrolls
 Works on Chrome/Edge/Safari
