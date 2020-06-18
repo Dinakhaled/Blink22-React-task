@@ -5,6 +5,11 @@ import Button from '../Button/Button';
 import historyIcon from "../../assets/images/history-icon.png";
 import "./ChatBubble.scss";
 
+/*
+  ChatBubble component for render conversation bubble with different content
+  @props: {from, who, date, action, text, children, title, textIcon, hasFooter, label, labelIcon, hasLinks}
+*/
+
 const ChatBubble = ({from, who, date, action, text, children, title, textIcon, hasFooter, label, labelIcon, hasLinks}) => {
   return ( 
     <div className={`chat-bubble mb-10`}>
@@ -14,7 +19,7 @@ const ChatBubble = ({from, who, date, action, text, children, title, textIcon, h
           {children}
           {text && <p className={`m-0 d-flex flex-center ${action ? 'mb-15' : ''}`}>{textIcon}{text}</p>}
           {hasFooter && <div className='chat-bubble__footer mt-20'>
-            {action && <Button icon={<img src={checkMark} className='icon' alt='checkMark' />} theme='primary' />}
+            {action && <Button icon={<img src={checkMark} className='icon' alt='checkMark' />} theme='primary' text="done" />}
             {label && <p className="chat-bubble__important-label"><span>{labelIcon}</span>{label}</p>}
             <div className="chat-bubble__footer__info">
                 <div>

@@ -2,6 +2,11 @@ import React from 'react';
 import avatarDefault from "../../assets/images/careteam_copy.png";
 import "./Info.scss";
 
+/*
+  Info component for render media design avatar/icon beside some texts
+  @props: {title, subTitle, text, date, image, tag, ImgSize, alignment}
+*/
+
 const Info = ({title, subTitle, text, date, image, tag, ImgSize, alignment}) => {
   return ( 
     <div className='info'>

@@ -1,11 +1,16 @@
 import React from 'react';
 import "./Button.scss";
 
-const Button = ({theme, icon}) => {
+/*
+  Button component for general used
+  @props: {theme, icon, text}
+*/
+
+const Button = ({theme, icon, text}) => {
   return ( 
     <button className={`btn ${theme}`}>
       {icon && icon}
-      done
+      {text}
     </button>
   );
 }

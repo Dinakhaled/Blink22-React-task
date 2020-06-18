@@ -24,6 +24,7 @@ class Conversation extends Component {
     }
   }
 
+  // Render ChatBubbles from ConversationData array
   renderConversation = (ConversationData) => {
     return ConversationData.map(({from, who, date, action, text, hasLinks, title, textIcon, hasFooter, hasInfo, id, label}) => (
       <ChatBubble 
@@ -59,6 +60,7 @@ class Conversation extends Component {
       <div>
         <ActionsBar actions={headerActions} title='Mom’s Discharge Plan' />
         <div className='p-30 conversation__container'>
+          <h4 className="text-center mb-20">Starter Care Plan created + daily actions added <span className='text-gray'>12:10p</span></h4>
           {this.renderConversation(ConversationData)}
         </div>
         <div className="conversation__footer">

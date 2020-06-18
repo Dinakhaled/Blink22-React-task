@@ -12,6 +12,7 @@ class ConversationList extends Component {
     }
   }
 
+  // Render conversation groups from conversationList array
   renderConversationList = (conversationList) => {
     const { activeConversationId } = this.state;
     return conversationList.map(item => (

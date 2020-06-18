@@ -17,6 +17,10 @@ body {
   color: $white;
 }
 
+.text-gray {
+  color: $grayA;
+}
+
 .d-flex {
   display: flex;
 }
@@ -34,6 +38,10 @@ body {
 
 .bold {
   font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
 }
 
 /* ============= 

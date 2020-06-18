@@ -1,6 +1,11 @@
 import React from 'react';
 import "./ActionsBar.scss";
 
+/*
+  Action bar is used for drawing list of actions
+  @props: {title, action}
+*/
+
 const ActionsBar = ({title, actions}) => {
   return ( 
     <div className='actions-bar'>
