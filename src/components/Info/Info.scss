@@ -1,0 +1,42 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  @include element(avatar) {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: $gray60;
+
+    @include modifier(tag) {
+      border: 3px solid $primaryMediumColor;
+    }
+
+    @include modifier(sm) {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+
+  @include element(main-content) {
+    display: flex;
+  }
+
+  @include element(tag) {
+    border-radius: 10px;
+    background-color: $primaryMediumColor;
+    color: $white;
+    text-align: center;
+    font-size: $smallFontSize;
+    padding: 3px 10px;
+    margin-top: 12px;
+  }
+}

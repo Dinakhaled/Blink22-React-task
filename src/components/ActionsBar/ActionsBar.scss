@@ -1,0 +1,32 @@
+@import "../../scss/variables";
+@import "../../scss/mixins";
+
+.actions-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 74px;
+  background-color: $primaryColor;
+  padding: 0 35px;
+
+  * {
+    color: $white;
+  }
+
+  img {
+    max-width: 35px;
+  }
+
+  @include element(items-container) {
+    display: flex;
+    align-items: center;
+  }
+
+  @include element(item) {
+    margin-right: 40px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+}

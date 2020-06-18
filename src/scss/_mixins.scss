@@ -1,0 +1,21 @@
+/* ============= BEM mixins ============= */
+// Block Element
+@mixin element($element) {
+  &__#{$element} {
+    @content;
+  }
+}
+// Block Modifier
+@mixin modifier($modifier) {
+  &--#{$modifier} {
+    @content;
+  }
+}
+
+// Background image
+@mixin bgImg($src, $size, $position, $repeat) {
+  background-image: url($src);
+  background-repeat: $repeat;
+  background-position: $position;
+  background-size: $size;
+}
