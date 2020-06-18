@@ -2,11 +2,20 @@
   display: grid;
   grid-template-columns: 22% 78%;
 
+  @media only screen and (min-width: 300px) {
+    grid-template-columns: 100%;
+  }
+
   @media only screen and (min-width: 768px) {
+    grid-template-columns: 100%;
+  }
+
+  @media only screen and (min-width: 992px) {
     grid-template-columns: 35% 65%;
   }
 
   @media only screen and (min-width: 1300px) {
-    grid-template-columns: 22% 78%;
+    grid-template-columns: 25% 75%;
   }
+
 }
