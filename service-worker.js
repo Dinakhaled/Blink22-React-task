@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Blink22-React-task/precache-manifest.f724d647da286185d31c3fafad1f42ad.js"
+  "/Blink22-React-task/precache-manifest.7a77b5ca2edac08a489ff22d12d5a453.js"
 );
 
 self.addEventListener('message', (event) => {

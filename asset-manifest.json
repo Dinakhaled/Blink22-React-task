@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Blink22-React-task/static/css/main.fdaa764e.chunk.css",
+    "main.css": "/Blink22-React-task/static/css/main.5389d3eb.chunk.css",
     "main.js": "/Blink22-React-task/static/js/main.9326cffc.chunk.js",
     "main.js.map": "/Blink22-React-task/static/js/main.9326cffc.chunk.js.map",
     "runtime-main.js": "/Blink22-React-task/static/js/runtime-main.7465555c.js",
@@ -8,16 +8,16 @@
     "static/js/2.8c40cf50.chunk.js": "/Blink22-React-task/static/js/2.8c40cf50.chunk.js",
     "static/js/2.8c40cf50.chunk.js.map": "/Blink22-React-task/static/js/2.8c40cf50.chunk.js.map",
     "index.html": "/Blink22-React-task/index.html",
-    "precache-manifest.f724d647da286185d31c3fafad1f42ad.js": "/Blink22-React-task/precache-manifest.f724d647da286185d31c3fafad1f42ad.js",
+    "precache-manifest.7a77b5ca2edac08a489ff22d12d5a453.js": "/Blink22-React-task/precache-manifest.7a77b5ca2edac08a489ff22d12d5a453.js",
     "service-worker.js": "/Blink22-React-task/service-worker.js",
-    "static/css/main.fdaa764e.chunk.css.map": "/Blink22-React-task/static/css/main.fdaa764e.chunk.css.map",
+    "static/css/main.5389d3eb.chunk.css.map": "/Blink22-React-task/static/css/main.5389d3eb.chunk.css.map",
     "static/js/2.8c40cf50.chunk.js.LICENSE.txt": "/Blink22-React-task/static/js/2.8c40cf50.chunk.js.LICENSE.txt",
     "static/media/base.scss": "/Blink22-React-task/static/media/Gotham-Book.dbd2f852.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.7465555c.js",
     "static/js/2.8c40cf50.chunk.js",
-    "static/css/main.fdaa764e.chunk.css",
+    "static/css/main.5389d3eb.chunk.css",
     "static/js/main.9326cffc.chunk.js"
   ]
 }
